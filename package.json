@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && tinacms build",
+    "build": "astro build && node scripts/tina-build.mjs",
     "preview": "astro preview",
-    "tina:dev": "tinacms dev -c \"astro dev\"",
-    "tina:build": "tinacms build"
+    "tina:dev": "npx --yes @tinacms/cli dev -c \"astro dev\"",
+    "tina:build": "node scripts/tina-build.mjs"
   },
   "dependencies": {
     "astro": "^5.2.0",
