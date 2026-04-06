@@ -1,4 +1,4 @@
-﻿{
+{
   "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
   "name": "shye-jih",
   "pages_build_output_dir": "dist",
