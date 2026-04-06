@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && tina build",
+    "build": "astro build && tinacms build",
     "preview": "astro preview",
     "tina:dev": "tinacms dev -c \"astro dev\"",
     "tina:build": "tinacms build"
