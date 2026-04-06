@@ -1,0 +1,86 @@
+﻿---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { content, resolveLang, t } from "../../lib/content";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "zh" } }, { params: { lang: "en" } }];
+}
+
+const lang = resolveLang(Astro.params.lang);
+const contact = content.contact;
+---
+<SiteLayout
+  lang={lang}
+  page="contact"
+  path="/contact"
+  title={t(contact.metaTitle, lang)}
+  description={t(contact.metaDescription, lang)}
+>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow" data-cms-field="contact.eyebrow">{t(contact.eyebrow, lang)}</p>
+        <h1 data-cms-field="contact.pageTitle">{t(contact.pageTitle, lang)}</h1>
+        <p class="hero-text" data-cms-field="contact.pageDescription">{t(contact.pageDescription, lang)}</p>
+      </div>
+      <div class="image-placeholder image-wide has-image">
+        <img class="media-image" data-cms-field="contact.heroImage.url" src={contact.heroImage.url} alt={t(contact.heroImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="contact.heroImage.caption">{t(contact.heroImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container contact-layout">
+      <div class="detail-card">
+        <h3 data-cms-field="contact.infoTitle">{t(contact.infoTitle, lang)}</h3>
+        <div class="contact-info">
+          <p><strong data-cms-field="contact.companyLabel">{t(contact.companyLabel, lang)}</strong>：<span data-cms-field="contact.companyValue">{t(contact.companyValue, lang)}</span></p>
+          <p><strong data-cms-field="contact.taxIdLabel">{t(contact.taxIdLabel, lang)}</strong>：<span data-cms-field="contact.taxIdValue">{contact.taxIdValue}</span></p>
+          <p><strong data-cms-field="contact.contactPersonLabel">{t(contact.contactPersonLabel, lang)}</strong>：<span data-cms-field="contact.contactPersonValue">{t(contact.contactPersonValue, lang)}</span></p>
+          <p><strong data-cms-field="contact.phoneLabel">{t(contact.phoneLabel, lang)}</strong>：<a data-cms-field="contact.phoneValue" href="tel:+88673745459">{t(contact.phoneValue, lang)}</a></p>
+          <p><strong data-cms-field="contact.faxLabel">{t(contact.faxLabel, lang)}</strong>：<span data-cms-field="contact.faxValue">{t(contact.faxValue, lang)}</span></p>
+          <p><strong data-cms-field="contact.addressLabel">{t(contact.addressLabel, lang)}</strong>：<span data-cms-field="contact.addressValue">{t(contact.addressValue, lang)}</span></p>
+          <p><strong data-cms-field="contact.emailLabel">{t(contact.emailLabel, lang)}</strong>：<a data-cms-field="contact.emailValue" href={`mailto:${contact.emailValue}`}>{contact.emailValue}</a></p>
+          <p>
+            <strong data-cms-field="contact.mapLabel">{t(contact.mapLabel, lang)}</strong>：
+            <a data-cms-field="contact.mapText" href={contact.mapHref} target="_blank" rel="noreferrer">{t(contact.mapText, lang)}</a>
+          </p>
+        </div>
+
+        <div class="image-placeholder image-card has-image">
+          <img class="media-image" data-cms-field="contact.mapImage.url" src={contact.mapImage.url} alt={t(contact.mapImage.alt, lang)} loading="lazy" />
+          <small class="media-caption" data-cms-field="contact.mapImage.caption">{t(contact.mapImage.caption, lang)}</small>
+        </div>
+      </div>
+
+      <form class="contact-form" data-alert-message={t(contact.form.alert, lang)}>
+        <label>
+          <span data-cms-field="contact.form.company.label">{t(contact.form.company.label, lang)}</span>
+          <input type="text" name="company" placeholder={t(contact.form.company.placeholder, lang)} />
+        </label>
+        <label>
+          <span data-cms-field="contact.form.name.label">{t(contact.form.name.label, lang)}</span>
+          <input type="text" name="name" placeholder={t(contact.form.name.placeholder, lang)} />
+        </label>
+        <label>
+          <span data-cms-field="contact.form.email.label">{t(contact.form.email.label, lang)}</span>
+          <input type="email" name="email" placeholder={t(contact.form.email.placeholder, lang)} />
+        </label>
+        <label>
+          <span data-cms-field="contact.form.product.label">{t(contact.form.product.label, lang)}</span>
+          <input type="text" name="product" placeholder={t(contact.form.product.placeholder, lang)} />
+        </label>
+        <label>
+          <span data-cms-field="contact.form.volume.label">{t(contact.form.volume.label, lang)}</span>
+          <input type="text" name="volume" placeholder={t(contact.form.volume.placeholder, lang)} />
+        </label>
+        <label>
+          <span data-cms-field="contact.form.message.label">{t(contact.form.message.label, lang)}</span>
+          <textarea name="message" rows="5" placeholder={t(contact.form.message.placeholder, lang)}></textarea>
+        </label>
+        <button class="button button-primary full" data-cms-field="contact.form.submit" type="submit">{t(contact.form.submit, lang)}</button>
+      </form>
+    </div>
+  </section>
+</SiteLayout>

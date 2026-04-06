@@ -1,0 +1,340 @@
+﻿{
+  "site": {
+    "companyName": { "zh": "協億機械工程", "en": "Shye Jih Mechanical Engineering" },
+    "companyNameFull": { "zh": "協億機械工程有限公司", "en": "Shye Jih Mechanical Engineering Co., Ltd." },
+    "englishName": { "zh": "Shye Jih Mechanical Engineering", "en": "Shye Jih Mechanical Engineering" },
+    "footerText": {
+      "zh": "切粒機押出模具製造｜機械及轉動設備維修｜金屬零件製造｜設備改良組裝",
+      "en": "Extrusion Die Manufacturing | Rotating Equipment Repair | Metal Part Manufacturing | Equipment Upgrade & Assembly"
+    },
+    "logo": {
+      "url": "/images/site-logo.jpg",
+      "alt": { "zh": "協億機械工程 logo", "en": "Shye Jih Mechanical Engineering logo" }
+    }
+  },
+  "navigation": {
+    "home": { "zh": "主頁介紹", "en": "Home" },
+    "about": { "zh": "服務項目", "en": "Services" },
+    "products": { "zh": "服務客戶", "en": "Clients" },
+    "technology": { "zh": "機台設備", "en": "Equipment" },
+    "quality": { "zh": "品質認證", "en": "Quality" },
+    "contact": { "zh": "聯絡我們", "en": "Contact" }
+  },
+  "home": {
+    "metaTitle": { "zh": "協億機械工程有限公司｜主頁介紹", "en": "Shye Jih Mechanical Engineering | Home" },
+    "metaDescription": {
+      "zh": "協億機械工程有限公司專注切粒機押出模具製造、機械及轉動設備維修、金屬零件製造、設備改良與組裝。",
+      "en": "Shye Jih specializes in extrusion dies, rotating equipment repair, metal parts, and integrated equipment assembly."
+    },
+    "eyebrow": { "zh": "專業機械工程與精密加工", "en": "Professional Mechanical Engineering & Precision Machining" },
+    "heroTitle": {
+      "zh": "協億機械工程有限公司\n專注模具製造、設備維修\n與特殊材質加工",
+      "en": "Shye Jih Mechanical Engineering\nFocused on die manufacturing, equipment repair,\nand special-alloy machining"
+    },
+    "heroDescription": {
+      "zh": "協億機械工程有限公司創立於民國七十八年，長期投入橡膠顆粒押出模具改良製造、轉動機械零件再生製新、瓦斯與重油及酸液噴頭製造、機械設備組裝，以及特殊材質加工與製造，累積了豐富而扎實的實務經驗。",
+      "en": "Founded in 1989, we have decades of hands-on experience in extrusion die improvement, rotating machinery refurbishment, nozzle manufacturing, equipment assembly, and special material machining."
+    },
+    "primaryButton": { "zh": "查看服務項目", "en": "View Services" },
+    "secondaryButton": { "zh": "聯絡我們", "en": "Contact Us" },
+    "heroImage": {
+      "url": "/images/home-hero_image_title.jpg",
+      "alt": { "zh": "首頁主視覺圖片區", "en": "Homepage hero visual" },
+      "caption": { "zh": "圖片先維持原模板，後續可替換為廠房、機台或工程實績照片", "en": "Replace with factory, equipment, or project photos." }
+    },
+    "highlights": [
+      {
+        "title": { "zh": "服務經驗深厚", "en": "Deep Industry Experience" },
+        "description": { "zh": "公司成立多年，持續服務石化、橡膠與材料相關產業，具備實務加工與設備維修整合能力。", "en": "Long-term service for petrochemical, rubber, and material industries with integrated repair and machining capabilities." }
+      },
+      {
+        "title": { "zh": "特殊材質加工", "en": "Special Material Machining" },
+        "description": { "zh": "可加工 SUS316、SUS304、17-4PH、Hastelloy C-276、Hastelloy B-3、B-2、Stellite No.6、No.12 等材料。", "en": "Supports SUS316, SUS304, 17-4PH, Hastelloy, and Stellite materials for high-spec projects." }
+      },
+      {
+        "title": { "zh": "整合製造與維修", "en": "Integrated Manufacturing & Repair" },
+        "description": { "zh": "從零件製造、模具改良到設備組裝與維修，提供兼具效率與品質的工程支援。", "en": "From parts production to die enhancement and equipment assembly, we deliver efficient and reliable engineering support." }
+      }
+    ],
+    "featuredSectionLabel": { "zh": "公司簡介", "en": "Company Overview" },
+    "featuredSectionTitle": { "zh": "穩健服務工業客戶，提供精密加工與機械工程解決方案", "en": "Serving industrial clients with precision machining and practical engineering solutions" },
+    "featuredCards": [
+      {
+        "image": {
+          "url": "/images/home-featured_card_1_image_title.jpg",
+          "alt": { "zh": "服務項目圖片區 A", "en": "Service image A" },
+          "caption": { "zh": "切粒機押出模具製造", "en": "Extrusion die manufacturing" }
+        },
+        "title": { "zh": "模具與零件製造", "en": "Dies & Part Manufacturing" },
+        "description": { "zh": "提供切粒機押出模具製造、金屬零件加工與特殊材質製造服務。", "en": "Manufacturing services for extrusion dies, metal parts, and special-alloy components." },
+        "linkText": { "zh": "了解服務", "en": "Learn More" },
+        "linkHref": "/zh/about"
+      },
+      {
+        "image": {
+          "url": "/images/home-featured_card_2_image_title.jpg",
+          "alt": { "zh": "服務項目圖片區 B", "en": "Service image B" },
+          "caption": { "zh": "機械及轉動設備維修", "en": "Rotating equipment repair" }
+        },
+        "title": { "zh": "設備維修與改良", "en": "Repair & Retrofit" },
+        "description": { "zh": "具備機械及轉動設備維修、設備改良與整機組裝的豐富經驗。", "en": "Extensive experience in rotating equipment maintenance, upgrades, and full-machine assembly." },
+        "linkText": { "zh": "查看設備", "en": "View Equipment" },
+        "linkHref": "/zh/technology"
+      },
+      {
+        "image": {
+          "url": "/images/home-featured_card_3_image_title.jpg",
+          "alt": { "zh": "服務項目圖片區 C", "en": "Service image C" },
+          "caption": { "zh": "長期合作工業客戶", "en": "Long-term industrial clients" }
+        },
+        "title": { "zh": "長期工業合作", "en": "Long-Term Industrial Partnerships" },
+        "description": { "zh": "服務客戶涵蓋塑膠、橡膠、材料與機械密封領域，並參與電廠深水泵維修合作。", "en": "Our client base spans plastics, rubber, materials, and mechanical sealing industries, including power plant pump projects." },
+        "linkText": { "zh": "服務客戶", "en": "See Clients" },
+        "linkHref": "/zh/products"
+      }
+    ],
+    "aboutSectionLabel": { "zh": "工程能力", "en": "Engineering Capability" },
+    "aboutSectionTitle": { "zh": "以完善機具與加工經驗，回應高規格製造與維修需求", "en": "Advanced equipment and practical know-how for high-spec manufacturing and maintenance" },
+    "aboutSectionDescription": {
+      "zh": "公司配備 CNC 車床、立式中心加工機、平面磨床、傳統車銑設備、量測平台與三次元量測儀，並使用日本 BIG 大昭和精機刀具與瑞典 Sandvik 抗震刀把，提供穩定加工品質。",
+      "en": "Our workshop is equipped with CNC lathes, VMCs, grinders, conventional machining equipment, and 3D measurement systems to ensure stable machining quality."
+    },
+    "aboutButton": { "zh": "瀏覽機台設備", "en": "Browse Equipment" },
+    "aboutImage": {
+      "url": "/images/home-about_image_title.jpg",
+      "alt": { "zh": "公司介紹圖片區", "en": "Company visual" },
+      "caption": { "zh": "圖片保留原模板，後續可放廠區內部、加工現場或實績照片", "en": "Replace with factory interior, machining scenes, or project photos." }
+    }
+  },
+  "about": {
+    "metaTitle": { "zh": "協億機械工程有限公司｜服務項目", "en": "Shye Jih Mechanical Engineering | Services" },
+    "metaDescription": { "zh": "協億機械工程有限公司提供切粒機押出模具製造、設備維修、金屬零件製造與設備改良組裝等服務。", "en": "Service scope includes extrusion dies, repair works, metal parts manufacturing, and equipment upgrades." },
+    "eyebrow": { "zh": "服務項目", "en": "Services" },
+    "pageTitle": { "zh": "提供製造、維修、改良與組裝的一站式工程支援", "en": "One-stop engineering support across manufacturing, repair, retrofit, and assembly" },
+    "pageDescription": { "zh": "協億機械工程有限公司主要服務聚焦於模具製造、設備維修、精密零件加工與設備改良組裝，依實際需求提供穩定、務實且可落地的工程方案。", "en": "We provide practical and stable engineering solutions for die manufacturing, equipment repair, precision machining, and equipment retrofitting." },
+    "heroImage": {
+      "url": "/images/about-hero_image_title.jpg",
+      "alt": { "zh": "服務項目主圖區", "en": "Services hero image" },
+      "caption": { "zh": "圖片先維持原模板，後續可替換為現場加工或機台照片", "en": "Replace with on-site machining or equipment photos." }
+    },
+    "serviceCards": [
+      {
+        "title": { "zh": "切粒機押出模具製造", "en": "Extrusion Die Manufacturing" },
+        "description": { "zh": "針對橡膠顆粒押出模具進行開發、製造與改良，提供符合產線需求的精密加工與使用優化。", "en": "Development, manufacturing, and optimization of extrusion dies tailored to production line needs." }
+      },
+      {
+        "title": { "zh": "機械及轉動設備維修", "en": "Rotating Equipment Repair" },
+        "description": { "zh": "承接各式機械與轉動設備維修、整修與零件更新，協助設備恢復穩定運轉並延長使用壽命。", "en": "Repair, overhaul, and parts replacement for rotating equipment to restore stable operations." }
+      },
+      {
+        "title": { "zh": "金屬零件製造", "en": "Metal Part Manufacturing" },
+        "description": { "zh": "提供各類金屬零件加工製造，並具備轉動機械零件再生製新的實務經驗，可依需求製作或修復零件。", "en": "Manufacturing and refurbishment of metal parts with practical expertise in rotating machinery components." }
+      }
+    ],
+    "factoryImage": {
+      "url": "/images/about-factory_image_title.jpg",
+      "alt": { "zh": "服務照片區 A", "en": "Service photo A" },
+      "caption": { "zh": "可替換為切粒模具、噴頭或葉片加工照片", "en": "Replace with die, nozzle, or blade machining images." }
+    },
+    "teamImage": {
+      "url": "/images/about-team_image_title.jpg",
+      "alt": { "zh": "服務照片區 B", "en": "Service photo B" },
+      "caption": { "zh": "可替換為整修、量測或組裝作業照片", "en": "Replace with maintenance, inspection, or assembly photos." }
+    },
+    "timelineLabel": { "zh": "工程內容", "en": "Engineering Scope" },
+    "timelineTitle": { "zh": "從特殊材質加工到設備整合，服務內容完整延伸", "en": "From special-material machining to full equipment integration" },
+    "timeline": [
+      { "index": "01", "description": { "zh": "設備改良與組裝，包含設備總成、水冷式軸承箱、切刀座及切粒刀相關製作與整合。", "en": "Equipment retrofit and assembly including water-cooled bearing housings and pelletizer knife systems." } },
+      { "index": "02", "description": { "zh": "瓦斯、重油與酸液噴頭製造，具備功能性零件製作與改良能力。", "en": "Manufacturing and enhancement for gas, heavy oil, and acid nozzles." } },
+      { "index": "03", "description": { "zh": "特殊材質加工與製造，包含 SUS316、SUS304、17-4PH、Hastelloy 系列與 Stellite 硬面焊加工。", "en": "Special material processing including stainless, Hastelloy alloys, and Stellite hardfacing." } },
+      { "index": "04", "description": { "zh": "硬面焊加工、磨粉機刀輪整修與動平衡校正、鋯合金葉片螺牙再生等精密整修服務。", "en": "Precision refurbishment such as hardfacing, balancing corrections, and zirconium blade thread restoration." } },
+      { "index": "05", "description": { "zh": "可依客戶現場需求進行客製化製作、維修與改善，支援多樣工業設備應用。", "en": "Customized manufacturing, repair, and improvements based on on-site conditions." } }
+    ]
+  },
+  "products": {
+    "metaTitle": { "zh": "協億機械工程有限公司｜服務客戶", "en": "Shye Jih Mechanical Engineering | Clients" },
+    "metaDescription": { "zh": "協億機械工程有限公司服務高雄塑酯、台灣橡膠、台灣苯乙烯、長興材料路竹廠、環球橡膠等客戶。", "en": "Trusted by clients in petrochemical, rubber, and materials manufacturing sectors." },
+    "eyebrow": { "zh": "服務客戶", "en": "Client Portfolio" },
+    "pageTitle": { "zh": "長期服務石化、橡膠、材料與機械工程相關產業", "en": "Long-term partnerships in petrochemical, rubber, materials, and machinery sectors" },
+    "pageDescription": { "zh": "協億機械工程有限公司自創立以來，持續為多家工業客戶提供加工、維修、改良與零件製造服務，建立長期合作與穩定信任。", "en": "Since founding, we have supported industrial clients with machining, repair, retrofit, and part manufacturing services." },
+    "heroImage": {
+      "url": "/images/products-hero_image_title.jpg",
+      "alt": { "zh": "服務客戶主圖區", "en": "Clients hero image" },
+      "caption": { "zh": "圖片先維持原模板，後續可替換為合作案例或現場作業照片", "en": "Replace with case studies or on-site project photos." }
+    },
+    "productCards": [
+      {
+        "image": {
+          "url": "/images/products-product_1_image_title.jpg",
+          "alt": { "zh": "客戶圖片區 01", "en": "Client image 01" },
+          "caption": { "zh": "石化與材料產業", "en": "Petrochemical & materials" }
+        },
+        "title": { "zh": "主要合作客戶", "en": "Major Clients" },
+        "description": { "zh": "高雄塑酯、台灣橡膠、台灣苯乙烯、長興材料路竹廠、環球橡膠（小港廠、高雄廠、大陸惠州廠）等。", "en": "Including KaoHsiung Plastics, Taiwan Rubber, Taiwan Styrene, Eternal Materials, and Universal Rubber sites." },
+        "subtitle": { "zh": "涵蓋塑膠、橡膠與材料相關製程設備需求。", "en": "Covering equipment needs across plastics, rubber, and materials processes." }
+      },
+      {
+        "image": {
+          "url": "/images/products-product_2_image_title.jpg",
+          "alt": { "zh": "客戶圖片區 02", "en": "Client image 02" },
+          "caption": { "zh": "機械密封零件代工", "en": "Mechanical seal components" }
+        },
+        "title": { "zh": "國際品牌配合經驗", "en": "Global Brand Collaboration" },
+        "description": { "zh": "為英國機械軸封 JOHN CRANE 公司之機械軸封零件代工廠商，具備穩定製造與配合能力。", "en": "Experienced OEM supplier for mechanical seal components with stable quality and delivery." },
+        "subtitle": { "zh": "可支援精密零件與指定材質加工需求。", "en": "Supports precision components and specified material requirements." }
+      },
+      {
+        "image": {
+          "url": "/images/products-product_3_image_title.jpg",
+          "alt": { "zh": "客戶圖片區 03", "en": "Client image 03" },
+          "caption": { "zh": "電廠設備維修合作", "en": "Power plant maintenance" }
+        },
+        "title": { "zh": "近年合作實績", "en": "Recent Track Record" },
+        "description": { "zh": "2024 至 2025 年與 SULZER 公司合作，維修興達電廠與台中火力發電廠多級式深水泵。", "en": "From 2024 to 2025, cooperated with SULZER on deep-water multistage pump repairs for major power plants." },
+        "subtitle": { "zh": "具備大型設備維修與現場配合作業經驗。", "en": "Strong on-site coordination for large-scale equipment repair projects." }
+      }
+    ],
+    "detailTitle": { "zh": "工事實例", "en": "Project Examples" },
+    "detailDescription": { "zh": "實績包含噴頭製造改良、精密鑄造特殊材質風帽開發、硬面焊加工、磨粉機刀輪整修與動平衡校正、鋯合金葉片螺牙再生、切粒螺旋刀製造、切粒模座設備總成、水冷式軸承箱、切刀座及切粒刀、切粒模具開發製造、齒輪箱軸承及齒輪更新、ABB TURBIN 軸承座製新、可調式風門製新及葉片開發等。", "en": "Projects include nozzle enhancement, special-alloy precision casting components, hardfacing, balancing corrections, thread restoration, and complete pelletizer systems." },
+    "cooperationTitle": { "zh": "合作特色", "en": "Collaboration Strength" },
+    "cooperationDescription": { "zh": "依客戶設備條件、材質需求與現場狀況提供客製加工、整修與改良方案，重視品質、配合度與交期穩定。", "en": "We deliver customized machining and refurbishment plans based on site condition, materials, and schedule priorities." },
+    "detailImage": {
+      "url": "/images/products-detail_image_title.jpg",
+      "alt": { "zh": "客戶實績照片區", "en": "Client project detail image" },
+      "caption": { "zh": "可替換為客戶案例、零件成品或維修前後對照照片", "en": "Replace with case photos, finished parts, or before/after comparisons." }
+    }
+  },
+  "technology": {
+    "metaTitle": { "zh": "協億機械工程有限公司｜機台設備", "en": "Shye Jih Mechanical Engineering | Equipment" },
+    "metaDescription": { "zh": "協億機械工程有限公司配備 CNC 車床、立式中心加工機、平面磨床、傳統車銑設備與三次元量測儀。", "en": "Equipped with CNC lathes, VMCs, grinders, conventional machining lines, and 3D measurement systems." },
+    "eyebrow": { "zh": "機台設備", "en": "Equipment" },
+    "pageTitle": { "zh": "完善加工設備與量測工具，支援多元精密工程需求", "en": "Comprehensive equipment and metrology tools for diverse precision engineering needs" },
+    "pageDescription": { "zh": "目前廠內具備 CNC 車床、立式中心加工機、平面磨床、傳統車銑設備與三次元量測儀，可因應零件製造、模具加工、整修與量測需求。", "en": "Our equipment supports part manufacturing, die machining, refurbishment, and precision measurement workflows." },
+    "heroImage": {
+      "url": "/images/technology-hero_image_title.jpg",
+      "alt": { "zh": "機台設備主圖區", "en": "Equipment hero image" },
+      "caption": { "zh": "圖片先維持原模板，後續可替換為主要機台全景或量測作業照片", "en": "Replace with panoramic equipment photos or metrology operation shots." }
+    },
+    "equipmentTitle": { "zh": "廠內設備清單", "en": "Equipment List" },
+    "equipmentList": [
+      { "zh": "Vturn 46 CNC 車床 1 部", "en": "Vturn 46 CNC Lathe (1 unit)" },
+      { "zh": "Vturn 26 CNC 車床 2 部", "en": "Vturn 26 CNC Lathe (2 units)" },
+      { "zh": "AWEA A+1400 CNC 立式中心加工機附第 4 軸 2 部", "en": "AWEA A+1400 VMC with 4th axis (2 units)" },
+      { "zh": "AWEA A+1800 CNC 立式中心加工機附第 4 軸 1 部", "en": "AWEA A+1800 VMC with 4th axis (1 unit)" },
+      { "zh": "800 x 400 自動平面磨床 1 部", "en": "800 x 400 automatic surface grinder (1 unit)" },
+      { "zh": "傳統車床 4 部", "en": "Conventional lathes (4 units)" },
+      { "zh": "傳統銑床 2 部，附分度頭", "en": "Conventional milling machines with indexing heads (2 units)" },
+      { "zh": "懸臂鑽床 1 部", "en": "Radial drilling machine (1 unit)" },
+      { "zh": "大理石量測平台", "en": "Granite metrology platform" },
+      { "zh": "日本 KEYENCE XM-5000 移動式 3 次元量測儀", "en": "KEYENCE XM-5000 portable 3D measuring system" }
+    ],
+    "equipmentImageA": {
+      "url": "/images/technology-equipment_image_a_title.jpg",
+      "alt": { "zh": "機台照片區 A", "en": "Equipment photo A" },
+      "caption": { "zh": "可替換為 CNC 車床或立式加工機照片", "en": "Replace with CNC lathe or VMC photos." }
+    },
+    "equipmentImageB": {
+      "url": "/images/technology-equipment_image_b_title.jpg",
+      "alt": { "zh": "機台照片區 B", "en": "Equipment photo B" },
+      "caption": { "zh": "可替換為量測設備、磨床或傳統車銑設備照片", "en": "Replace with metrology, grinder, or conventional machine photos." }
+    },
+    "toolingTitle": { "zh": "刀具與加工能力", "en": "Tooling & Machining Capability" },
+    "toolingDescription": { "zh": "本公司 CNC 加工刀把均採用日本 BIG 大昭和精機加工刀具與全套搪孔刀具，另備有瑞典 Sandvik 抗震刀把，加工設備與機械工具齊全，可支援穩定且高精度的加工需求。", "en": "We use BIG Daishowa tooling systems and Sandvik anti-vibration holders to ensure stable and high-precision machining." },
+    "measurementTitle": { "zh": "量測與品質掌握", "en": "Metrology & Quality Control" },
+    "measurementDescription": { "zh": "搭配大理石量測平台與 KEYENCE XM-5000 移動式三次元量測儀，可進行尺寸確認與加工精度檢測，提升製程品質與交件穩定性。", "en": "With granite platforms and KEYENCE XM-5000 systems, we validate dimensional accuracy and machining precision consistently." },
+    "processImage": {
+      "url": "/images/technology-process_image_title.jpg",
+      "alt": { "zh": "量測與加工示意圖", "en": "Measurement and machining process visual" },
+      "caption": { "zh": "可替換為刀具、量測過程或工件細節照片", "en": "Replace with tooling, measurement procedures, or workpiece detail photos." }
+    }
+  },
+  "quality": {
+    "metaTitle": { "zh": "協億機械工程有限公司｜品質認證", "en": "Shye Jih Mechanical Engineering | Quality" },
+    "metaDescription": { "zh": "以專業認證與量測管理流程，確保每個加工與維修步驟都符合品質標準。", "en": "Professional certification and measurement workflows ensure each manufacturing and repair process meets quality standards." },
+    "eyebrow": { "zh": "品質控管", "en": "Quality Control" },
+    "pageTitle": { "zh": "可追蹤、可驗證的執行品質", "en": "Traceable and verifiable execution quality" },
+    "pageDescription": { "zh": "我們透過專業認證、檢驗流程與量測機制，確保加工品質與成果透明。", "en": "We maintain quality through certifications, inspection checklists, and measurable process controls." },
+    "heroImage": {
+      "url": "/images/quality-hero_image_title.svg",
+      "alt": { "zh": "品質主視覺圖片區", "en": "Quality hero image" },
+      "caption": { "zh": "建議放檢驗室、量測儀器或證書牆照片", "en": "Replace with inspection room, metrology equipment, or certificate wall photos." }
+    },
+    "certImage": {
+      "url": "/images/quality-cert_image_title.svg",
+      "alt": { "zh": "證書照片區", "en": "Certification image" },
+      "caption": { "zh": "可替換 ISO / 品質認證證書", "en": "Replace with ISO or other certification photos." }
+    },
+    "certTitle": { "zh": "專業認證", "en": "Professional Certifications" },
+    "certItems": [
+      { "zh": "加工與品保流程文件管理制度", "en": "Documented machining and quality workflow management" },
+      { "zh": "關鍵尺寸量測與可追溯紀錄", "en": "Critical-dimension measurement and traceable records" },
+      { "zh": "客製品檢驗項目與出貨檢核機制", "en": "Custom inspection items and pre-delivery verification" }
+    ],
+    "inspectionTitle": { "zh": "檢驗流程", "en": "Inspection Process" },
+    "inspectionItems": [
+      { "zh": "需求確認：明確加工規格與驗收標準", "en": "Requirement alignment: define specs and acceptance criteria" },
+      { "zh": "製程檢核：依工序進行尺寸與外觀確認", "en": "In-process checks: verify dimensions and surface quality" },
+      { "zh": "出貨驗證：建立最終檢驗與交付紀錄", "en": "Shipment validation: final inspection with delivery records" }
+    ],
+    "measureImage": {
+      "url": "/images/quality-measure_image_title.svg",
+      "alt": { "zh": "量測儀器照片區", "en": "Measurement image" },
+      "caption": { "zh": "可替換三次元、二次元量測設備圖", "en": "Replace with CMM or 2D measurement equipment photos." }
+    },
+    "measureTitle": { "zh": "量測與品保工具", "en": "Measurement & QA Tools" },
+    "measureItems": [
+      { "zh": "三次元量測儀與量測平台", "en": "3D measurement system and metrology platform" },
+      { "zh": "加工尺寸追蹤與異常回報機制", "en": "Dimensional tracking and deviation reporting" },
+      { "zh": "交件品質報告與改善建議", "en": "Delivery quality reports and improvement recommendations" }
+    ]
+  },
+  "contact": {
+    "metaTitle": { "zh": "協億機械工程有限公司｜聯絡我們", "en": "Shye Jih Mechanical Engineering | Contact" },
+    "metaDescription": { "zh": "歡迎聯絡協億機械工程有限公司，洽詢模具製造、設備維修、零件加工與設備改良組裝服務。", "en": "Contact us for die manufacturing, repair services, precision part machining, and equipment integration." },
+    "eyebrow": { "zh": "聯絡我們", "en": "Contact" },
+    "pageTitle": { "zh": "歡迎洽詢協億機械工程有限公司", "en": "Get in touch with Shye Jih Mechanical Engineering" },
+    "pageDescription": { "zh": "如需切粒機押出模具製造、設備維修、金屬零件製造、設備改良與組裝等服務，歡迎與我們聯繫，我們將盡快為您提供協助。", "en": "If you need extrusion die production, equipment repair, metal parts, or retrofit services, our team is ready to help." },
+    "heroImage": {
+      "url": "/images/contact-hero_image_title.jpg",
+      "alt": { "zh": "聯絡頁主圖區", "en": "Contact hero image" },
+      "caption": { "zh": "圖片先維持原模板，後續可替換為公司門面、接待區或廠區照片", "en": "Replace with company exterior, reception area, or site photos." }
+    },
+    "infoTitle": { "zh": "聯絡資訊", "en": "Contact Information" },
+    "companyLabel": { "zh": "公司名稱", "en": "Company" },
+    "companyValue": { "zh": "協億機械工程有限公司", "en": "Shye Jih Mechanical Engineering Co., Ltd." },
+    "taxIdLabel": { "zh": "統一編號", "en": "Tax ID" },
+    "taxIdValue": "89415220",
+    "contactPersonLabel": { "zh": "聯絡人", "en": "Contact Person" },
+    "contactPersonValue": { "zh": "陳昱銘", "en": "Mr. Chen" },
+    "phoneLabel": { "zh": "電話", "en": "Phone" },
+    "phoneValue": { "zh": "(07) 374-5459 / (07) 372-8044", "en": "+886-7-374-5459 / +886-7-372-8044" },
+    "faxLabel": { "zh": "傳真", "en": "Fax" },
+    "faxValue": { "zh": "(07) 372-0185", "en": "+886-7-372-0185" },
+    "addressLabel": { "zh": "地址", "en": "Address" },
+    "addressValue": { "zh": "高雄市仁武區仁發六路 28 號", "en": "No. 28, Renfa 6th Rd., Renwu Dist., Kaohsiung, Taiwan" },
+    "emailLabel": { "zh": "E-mail", "en": "E-mail" },
+    "emailValue": "shye.jih@msa.hinet.net",
+    "mapLabel": { "zh": "Google Map", "en": "Google Map" },
+    "mapText": { "zh": "查看地圖位置", "en": "Open Location" },
+    "mapHref": "https://www.google.com/maps/search/?api=1&query=%E9%AB%98%E9%9B%84%E5%B8%82%E4%BB%81%E6%AD%A6%E5%8D%80%E4%BB%81%E7%99%BC%E5%85%AD%E8%B7%AF28%E8%99%9F",
+    "mapImage": {
+      "url": "/images/contact-map_image_title.jpg",
+      "alt": { "zh": "地圖或門面照片區", "en": "Map or storefront image" },
+      "caption": { "zh": "可替換為 Google Map 截圖、公司門面或廠區位置照片", "en": "Replace with Google Map screenshot, storefront, or site location photo." }
+    },
+    "form": {
+      "company": { "label": { "zh": "公司名稱", "en": "Company" }, "placeholder": { "zh": "請輸入公司名稱", "en": "Enter company name" } },
+      "name": { "label": { "zh": "聯絡人", "en": "Contact Name" }, "placeholder": { "zh": "請輸入聯絡人姓名", "en": "Enter contact name" } },
+      "email": { "label": { "zh": "E-mail", "en": "E-mail" }, "placeholder": { "zh": "請輸入聯絡 Email", "en": "Enter contact email" } },
+      "product": { "label": { "zh": "需求項目", "en": "Service Request" }, "placeholder": { "zh": "例如：模具製造、設備維修、零件加工、設備組裝", "en": "e.g. die manufacturing, repair, machining, assembly" } },
+      "volume": { "label": { "zh": "數量 / 規格", "en": "Quantity / Spec" }, "placeholder": { "zh": "請輸入加工數量、尺寸、材質或其他基本需求", "en": "Enter quantity, dimensions, material, and requirements" } },
+      "message": { "label": { "zh": "補充說明", "en": "Additional Notes" }, "placeholder": { "zh": "請填寫需求說明、交期需求或其他補充資訊", "en": "Describe your needs, timeline, and extra notes" } },
+      "submit": { "zh": "送出詢問", "en": "Submit Inquiry" },
+      "alert": {
+        "zh": "這是展示版表單。提供正式信箱或 API 後，我可以幫你接上真正的詢價流程。",
+        "en": "This is a demo form. Connect your real email or API endpoint to enable production inquiries."
+      }
+    }
+  }
+}
+

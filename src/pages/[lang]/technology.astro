@@ -1,0 +1,70 @@
+﻿---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { content, resolveLang, t } from "../../lib/content";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "zh" } }, { params: { lang: "en" } }];
+}
+
+const lang = resolveLang(Astro.params.lang);
+const technology = content.technology;
+---
+<SiteLayout
+  lang={lang}
+  page="technology"
+  path="/technology"
+  title={t(technology.metaTitle, lang)}
+  description={t(technology.metaDescription, lang)}
+>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow" data-cms-field="technology.eyebrow">{t(technology.eyebrow, lang)}</p>
+        <h1 data-cms-field="technology.pageTitle">{t(technology.pageTitle, lang)}</h1>
+        <p class="hero-text" data-cms-field="technology.pageDescription">{t(technology.pageDescription, lang)}</p>
+      </div>
+      <div class="image-placeholder image-wide has-image">
+        <img class="media-image" data-cms-field="technology.heroImage.url" src={technology.heroImage.url} alt={t(technology.heroImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="technology.heroImage.caption">{t(technology.heroImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container tech-layout">
+      <div class="equipment-list detail-card">
+        <h3 data-cms-field="technology.equipmentTitle">{t(technology.equipmentTitle, lang)}</h3>
+        <ul>
+          {technology.equipmentList.map((item: any, index: number) => (
+            <li data-cms-field={`technology.equipmentList.${index}`}>{t(item, lang)}</li>
+          ))}
+        </ul>
+      </div>
+      <div class="stacked-visuals">
+        <div class="image-placeholder image-card large has-image">
+          <img class="media-image" data-cms-field="technology.equipmentImageA.url" src={technology.equipmentImageA.url} alt={t(technology.equipmentImageA.alt, lang)} loading="lazy" />
+          <small class="media-caption" data-cms-field="technology.equipmentImageA.caption">{t(technology.equipmentImageA.caption, lang)}</small>
+        </div>
+        <div class="image-placeholder image-card has-image">
+          <img class="media-image" data-cms-field="technology.equipmentImageB.url" src={technology.equipmentImageB.url} alt={t(technology.equipmentImageB.alt, lang)} loading="lazy" />
+          <small class="media-caption" data-cms-field="technology.equipmentImageB.caption">{t(technology.equipmentImageB.caption, lang)}</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container split-feature">
+      <div class="detail-card">
+        <h3 data-cms-field="technology.toolingTitle">{t(technology.toolingTitle, lang)}</h3>
+        <p data-cms-field="technology.toolingDescription">{t(technology.toolingDescription, lang)}</p>
+        <h3 data-cms-field="technology.measurementTitle">{t(technology.measurementTitle, lang)}</h3>
+        <p data-cms-field="technology.measurementDescription">{t(technology.measurementDescription, lang)}</p>
+      </div>
+      <div class="image-placeholder image-wide has-image">
+        <img class="media-image" data-cms-field="technology.processImage.url" src={technology.processImage.url} alt={t(technology.processImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="technology.processImage.caption">{t(technology.processImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+</SiteLayout>

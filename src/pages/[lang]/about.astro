@@ -1,0 +1,72 @@
+﻿---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { content, resolveLang, t } from "../../lib/content";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "zh" } }, { params: { lang: "en" } }];
+}
+
+const lang = resolveLang(Astro.params.lang);
+const about = content.about;
+---
+<SiteLayout
+  lang={lang}
+  page="about"
+  path="/about"
+  title={t(about.metaTitle, lang)}
+  description={t(about.metaDescription, lang)}
+>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow" data-cms-field="about.eyebrow">{t(about.eyebrow, lang)}</p>
+        <h1 data-cms-field="about.pageTitle">{t(about.pageTitle, lang)}</h1>
+        <p class="hero-text" data-cms-field="about.pageDescription">{t(about.pageDescription, lang)}</p>
+      </div>
+      <div class="image-placeholder image-service-wide has-image">
+        <img class="media-image" data-cms-field="about.heroImage.url" src={about.heroImage.url} alt={t(about.heroImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="about.heroImage.caption">{t(about.heroImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-layout">
+      <div class="about-copy">
+        {about.serviceCards.map((item: any, index: number) => (
+          <article class="detail-card">
+            <h3 data-cms-field={`about.serviceCards.${index}.title`}>{t(item.title, lang)}</h3>
+            <p data-cms-field={`about.serviceCards.${index}.description`}>{t(item.description, lang)}</p>
+          </article>
+        ))}
+      </div>
+      <div class="stacked-visuals">
+        <div class="image-placeholder image-service-wide has-image">
+          <img class="media-image" data-cms-field="about.factoryImage.url" src={about.factoryImage.url} alt={t(about.factoryImage.alt, lang)} loading="lazy" />
+          <small class="media-caption" data-cms-field="about.factoryImage.caption">{t(about.factoryImage.caption, lang)}</small>
+        </div>
+        <div class="image-placeholder image-service-wide has-image">
+          <img class="media-image" data-cms-field="about.teamImage.url" src={about.teamImage.url} alt={t(about.teamImage.alt, lang)} loading="lazy" />
+          <small class="media-caption" data-cms-field="about.teamImage.caption">{t(about.teamImage.caption, lang)}</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-heading">
+        <p class="eyebrow" data-cms-field="about.timelineLabel">{t(about.timelineLabel, lang)}</p>
+        <h2 data-cms-field="about.timelineTitle">{t(about.timelineTitle, lang)}</h2>
+      </div>
+      <div class="timeline">
+        {about.timeline.map((item: any, index: number) => (
+          <article>
+            <span>{item.index}</span>
+            <p data-cms-field={`about.timeline.${index}.description`}>{t(item.description, lang)}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</SiteLayout>

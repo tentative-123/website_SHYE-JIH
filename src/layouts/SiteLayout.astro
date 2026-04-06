@@ -1,0 +1,74 @@
+﻿---
+import { content, t, type Lang, localizedHref } from "../lib/content";
+
+interface Props {
+  lang: Lang;
+  page: string;
+  title: string;
+  description: string;
+  path: string;
+}
+
+const { lang, page, title, description, path } = Astro.props;
+const nav = content.navigation;
+const site = content.site;
+---
+<!doctype html>
+<html lang={lang === "en" ? "en" : "zh-Hant"}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page={page}>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand brand-logo" href={localizedHref(lang, "/")} aria-label={lang === "zh" ? "回到首頁" : "Back to homepage"}>
+          <img src={site.logo.url} alt={t(site.logo.alt, lang)} loading="eager" />
+        </a>
+        <button class="menu-toggle" type="button" aria-label={lang === "zh" ? "切換選單" : "Toggle menu"} aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header-actions">
+          <nav class="site-nav">
+            <a href={localizedHref(lang, "/")} data-nav="home">{t(nav.home, lang)}</a>
+            <a href={localizedHref(lang, "/about")} data-nav="about">{t(nav.about, lang)}</a>
+            <a href={localizedHref(lang, "/products")} data-nav="products">{t(nav.products, lang)}</a>
+            <a href={localizedHref(lang, "/technology")} data-nav="technology">{t(nav.technology, lang)}</a>
+            <a href={localizedHref(lang, "/quality")} data-nav="quality">{t(nav.quality, lang)}</a>
+            <a href={localizedHref(lang, "/contact")} data-nav="contact">{t(nav.contact, lang)}</a>
+          </nav>
+          <div class="language-switch" aria-label="Language switcher">
+            <button type="button" data-switch-url={localizedHref("zh", path)} class={lang === "zh" ? "is-active" : ""} aria-pressed={lang === "zh" ? "true" : "false"}>中文</button>
+            <button type="button" data-switch-url={localizedHref("en", path)} class={lang === "en" ? "is-active" : ""} aria-pressed={lang === "en" ? "true" : "false"}>EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          © {new Date().getFullYear()} {t(site.companyNameFull, lang)}. All Rights Reserved.
+        </p>
+        <p data-cms-field="site.footerText">{t(site.footerText, lang)}</p>
+      </div>
+    </footer>
+
+    <script src="/site.js"></script>
+  </body>
+</html>

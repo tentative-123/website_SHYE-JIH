@@ -1,0 +1,63 @@
+﻿---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { content, resolveLang, t } from "../../lib/content";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "zh" } }, { params: { lang: "en" } }];
+}
+
+const lang = resolveLang(Astro.params.lang);
+const products = content.products;
+---
+<SiteLayout
+  lang={lang}
+  page="products"
+  path="/products"
+  title={t(products.metaTitle, lang)}
+  description={t(products.metaDescription, lang)}
+>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <p class="eyebrow" data-cms-field="products.eyebrow">{t(products.eyebrow, lang)}</p>
+        <h1 data-cms-field="products.pageTitle">{t(products.pageTitle, lang)}</h1>
+        <p class="hero-text" data-cms-field="products.pageDescription">{t(products.pageDescription, lang)}</p>
+      </div>
+      <div class="image-placeholder image-wide has-image">
+        <img class="media-image" data-cms-field="products.heroImage.url" src={products.heroImage.url} alt={t(products.heroImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="products.heroImage.caption">{t(products.heroImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container product-grid">
+      {products.productCards.map((item: any, index: number) => (
+        <article class="product-card">
+          <div class="image-placeholder image-card has-image">
+            <img class="media-image" data-cms-field={`products.productCards.${index}.image.url`} src={item.image.url} alt={t(item.image.alt, lang)} loading="lazy" />
+            <small class="media-caption" data-cms-field={`products.productCards.${index}.image.caption`}>{t(item.image.caption, lang)}</small>
+          </div>
+          <h3 data-cms-field={`products.productCards.${index}.title`}>{t(item.title, lang)}</h3>
+          <p data-cms-field={`products.productCards.${index}.description`}>{t(item.description, lang)}</p>
+          <span data-cms-field={`products.productCards.${index}.subtitle`}>{t(item.subtitle, lang)}</span>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container split-feature">
+      <div class="detail-card">
+        <h3 data-cms-field="products.detailTitle">{t(products.detailTitle, lang)}</h3>
+        <p data-cms-field="products.detailDescription">{t(products.detailDescription, lang)}</p>
+        <h3 data-cms-field="products.cooperationTitle">{t(products.cooperationTitle, lang)}</h3>
+        <p data-cms-field="products.cooperationDescription">{t(products.cooperationDescription, lang)}</p>
+      </div>
+      <div class="image-placeholder image-wide has-image">
+        <img class="media-image" data-cms-field="products.detailImage.url" src={products.detailImage.url} alt={t(products.detailImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="products.detailImage.caption">{t(products.detailImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+</SiteLayout>

@@ -1,0 +1,92 @@
+﻿---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { content, resolveLang, t } from "../../lib/content";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "zh" } }, { params: { lang: "en" } }];
+}
+
+const lang = resolveLang(Astro.params.lang);
+const home = content.home;
+---
+<SiteLayout
+  lang={lang}
+  page="home"
+  path="/"
+  title={t(home.metaTitle, lang)}
+  description={t(home.metaDescription, lang)}
+>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-cms-field="home.eyebrow">{t(home.eyebrow, lang)}</p>
+        <h1 class="hero-title" data-cms-field="home.heroTitle">{t(home.heroTitle, lang)}</h1>
+        <p class="hero-text" data-cms-field="home.heroDescription">{t(home.heroDescription, lang)}</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href={`/${lang}/about`} data-cms-field="home.primaryButton">{t(home.primaryButton, lang)}</a>
+          <a class="button button-secondary" href={`/${lang}/contact`} data-cms-field="home.secondaryButton">{t(home.secondaryButton, lang)}</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="image-placeholder image-tall has-image">
+          <img class="media-image" data-cms-field="home.heroImage.url" src={home.heroImage.url} alt={t(home.heroImage.alt, lang)} loading="eager" />
+          <small class="media-caption" data-cms-field="home.heroImage.caption">{t(home.heroImage.caption, lang)}</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="card-grid three">
+        {home.highlights.map((item: any, index: number) => (
+          <article class="highlight-card">
+            <strong data-cms-field={`home.highlights.${index}.title`}>{t(item.title, lang)}</strong>
+            <p data-cms-field={`home.highlights.${index}.description`}>{t(item.description, lang)}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-links">
+    <div class="container">
+      <div class="section-heading compact">
+        <p class="eyebrow" data-cms-field="home.featuredSectionLabel">{t(home.featuredSectionLabel, lang)}</p>
+        <h2 data-cms-field="home.featuredSectionTitle">{t(home.featuredSectionTitle, lang)}</h2>
+      </div>
+      <div class="card-grid three">
+        {home.featuredCards.map((item: any, index: number) => (
+          <article class="info-card">
+            <div class="image-placeholder image-card has-image">
+              <img class="media-image" data-cms-field={`home.featuredCards.${index}.image.url`} src={item.image.url} alt={t(item.image.alt, lang)} loading="lazy" />
+              <small class="media-caption" data-cms-field={`home.featuredCards.${index}.image.caption`}>{t(item.image.caption, lang)}</small>
+            </div>
+            <h3 data-cms-field={`home.featuredCards.${index}.title`}>{t(item.title, lang)}</h3>
+            <p data-cms-field={`home.featuredCards.${index}.description`}>{t(item.description, lang)}</p>
+            <a href={item.linkHref.replace("/zh", `/${lang}`)} data-cms-field={`home.featuredCards.${index}.linkText`}>{t(item.linkText, lang)}</a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split-feature">
+      <div>
+        <div class="section-heading left">
+          <p class="eyebrow" data-cms-field="home.aboutSectionLabel">{t(home.aboutSectionLabel, lang)}</p>
+          <h2 data-cms-field="home.aboutSectionTitle">{t(home.aboutSectionTitle, lang)}</h2>
+          <p data-cms-field="home.aboutSectionDescription">{t(home.aboutSectionDescription, lang)}</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-secondary" href={`/${lang}/technology`} data-cms-field="home.aboutButton">{t(home.aboutButton, lang)}</a>
+        </div>
+      </div>
+      <div class="image-placeholder image-wide has-image">
+        <img class="media-image" data-cms-field="home.aboutImage.url" src={home.aboutImage.url} alt={t(home.aboutImage.alt, lang)} loading="lazy" />
+        <small class="media-caption" data-cms-field="home.aboutImage.caption">{t(home.aboutImage.caption, lang)}</small>
+      </div>
+    </div>
+  </section>
+</SiteLayout>

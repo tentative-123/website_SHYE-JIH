@@ -1,0 +1,15 @@
+﻿---
+const target = "/zh/";
+---
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <script>window.location.replace("/zh/");</script>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <a href={target}>Go to site</a>
+  </body>
+</html>
