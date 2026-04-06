@@ -1,8 +1,10 @@
 {
   "$schema": "https://developers.cloudflare.com/workers/wrangler/config-schema.json",
   "name": "shye-jih",
+  "main": "./worker.js",
   "compatibility_date": "2026-04-06",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS"
   }
 }
